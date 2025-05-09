@@ -8,7 +8,6 @@ const SearchBar = ({ onSearch }) => {
       e.preventDefault();
       if (input.trim() !== '') {
         onSearch(input.trim());
-        setInput('');
       }
     };
 
