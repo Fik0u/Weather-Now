@@ -2,8 +2,8 @@ import React from 'react'
 
 const SpinLoad = () => {
   return (
-    <div>
-      Load Spinner
+    <div className='spinner-container'>
+      <div className='spinner'></div>
     </div>
   )
 }
