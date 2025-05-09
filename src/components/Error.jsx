@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Error = () => {
+const Error = ({ message }) => {
   return (
-    <div>
-      Error
+    <div style={{ color: 'red', marginTop: '1rem' }}>
+      ⚠️ {message}
     </div>
   )
 }
