@@ -18,6 +18,7 @@ function App() {
   "clear sky": "url('/images/sunny.jpg')",
   "few clouds": "url('/images/cloudy.jpg')",
   "scattered clouds": "url('/images/cloudy.jpg')",
+  "overcast clouds": "url('/images/cloudy.jpg')",
   "broken clouds": "url('/images/brokenClouds.jpg')",
   "shower rain": "url('/images/rainy.jpg')",
   "rain": "url('/images/rainy.jpg')",

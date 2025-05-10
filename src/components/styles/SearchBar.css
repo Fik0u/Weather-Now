@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px auto;
+  margin: 20px auto;
   width: 100%;
 }
 
@@ -10,7 +10,7 @@
   position: relative;
   margin: auto;
   width: 100%;
-  max-width: 250px;
+  max-width: 300px;
 }
 
 .search-input {
