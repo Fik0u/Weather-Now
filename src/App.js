@@ -20,7 +20,8 @@ function App() {
   "scattered clouds": "url('/images/cloudy.jpg')",
   "overcast clouds": "url('/images/cloudy.jpg')",
   "broken clouds": "url('/images/brokenClouds.jpg')",
-  "shower rain": "url('/images/rainy.jpg')",
+  "moderate rain": "url('/images/rainy.jpg')",
+  "light rain": "url('/images/rainy.jpg')",
   "rain": "url('/images/rainy.jpg')",
   "thunderstorm": "url('/images/thunderstorm.jpg')",
   "snow": "url('/images/snow.jpg')",
@@ -51,6 +52,29 @@ function App() {
     <div className="App" style={{ backgroundImage: background }}>
 
       {loading && <SpinLoad />}
+
+      {!weatherData && (
+        <>
+        <div className='weather-svg'>
+          <svg width="100" height="100" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <circle cx="32" cy="32" r="12" fill="#FFD93B">
+        <animate attributeName="r" values="12;13;12" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <g fill="#D3D3D3">
+        <ellipse cx="42" cy="36" rx="10" ry="6" />
+        <ellipse cx="34" cy="38" rx="12" ry="8" />
+        <ellipse cx="26" cy="36" rx="9" ry="6" />
+      </g>
+    </g>
+  </svg>
+        </div>
+        <div className='welcome-container'>
+          <h2 className='welcome-msg'>🌤️ Welcome to WeatherNow ! Check the weather in any city in one click</h2>
+          <p className="suggestions">Suggestions : <span onClick={() => handleSearch('Paris')}>Paris</span>, <span onClick={() => handleSearch('Tokyo')}>Tokyo</span>, <span onClick={() => handleSearch('New York')}>New York</span></p>
+        </div>
+        </>
+      )}
 
       <SearchBar onSearch= {handleSearch} />
 
