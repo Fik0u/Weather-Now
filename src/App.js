@@ -78,7 +78,7 @@ function App() {
 
       <SearchBar onSearch= {handleSearch} />
 
-      {weatherData && <WeatherCard data = {weatherData} />}
+      {city && weatherData && <WeatherCard data = {weatherData} />}
 
       {error && <Error message = {error} />}
     </div>
