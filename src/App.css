@@ -1,7 +1,16 @@
 .App {
   text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 0.7s ease-in-out;
 }
 
-body {
-  background-color: rgba(9, 95, 78, 0.718);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
