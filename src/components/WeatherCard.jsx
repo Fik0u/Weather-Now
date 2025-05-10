@@ -11,14 +11,19 @@ const WeatherCard = ({ data }) => {
 
   return (
     <div className='weather-card'>
-      <h2>{name}, {country}</h2>
-      <div className='weather-icon'>
-        <img src={`https://openweathermap.org/img/wn/${icon}.png`} alt={description} />
+      <div className='weather-top'>
+        <div className='icon-section'>
+          <img src={`https://openweathermap.org/img/wn/${icon}.png`} alt={description} />
+        </div>
+        <div className='info-section'>
+          <h2>{name}, {country}</h2>
+          <p className='temp'>{temp}°C</p>
+        </div>
       </div>
-      <div className='weather-details'>
-        <p>Temperature: {temp}°C</p>
-        <p>Humidity: {humidity}%</p>
-        <p>Description: {description}</p>
+      <hr className='divider' />
+      <div className='weather-bottom'>
+        <p><strong>Humidity:</strong> {humidity}%</p>
+        <p><strong>Description:</strong> {description}</p>
       </div>
     </div>
   )
